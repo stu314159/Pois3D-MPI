@@ -1,0 +1,3 @@
+This is a "simple" 3D Lattice Boltzmann code for simulating Poiseuille flow in a box-like channel.  The purpose for writing it was to gain familiarity with MPI non-blocking message passing as well as the required interleaving of communication and computation.  
+
+A very crude geometric domain decomposition is used and the lattice topology is assumed to be regular cartesian mesh.  Because of the decomposition methodology, this program scales well only for long and skinny channels where the interface between partitions is small compared to the number of lattice points on the interior of each partition.
